@@ -108,5 +108,4 @@ class api_2(Resource):
 
 api.add_resource(api_2, '/api_2', '/api_2/<id>')
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port='8080')
+app.run(debug=True, host='0.0.0.0', port='8080')
