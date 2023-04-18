@@ -9,7 +9,7 @@ import couchdb
 # authentication
 admin = 'admin'
 password = 'password'
-url = f'http://{admin}:{password}@172.26.130.118:5984/'
+url = f'http://{admin}:{password}@172.17.0.2:5984/'
 
 # get couchdb instance
 couch = couchdb.Server(url)
@@ -108,4 +108,5 @@ class api_2(Resource):
 
 api.add_resource(api_2, '/api_2', '/api_2/<id>')
 
-app.run(debug=True, host='0.0.0.0', port='8080')
+if __name__ == '__main__':
+    app.run(debug=True, host='172.17.0.2', port='8080')
