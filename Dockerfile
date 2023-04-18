@@ -11,6 +11,6 @@ RUN pip install couchdb;\
     pip install flask_migrate;\
     pip install flask-cors
 
-EXPOSE 5000
+EXPOSE 8080
 
 CMD ["python", "./Flask/app.py"]
