@@ -9,7 +9,7 @@ import couchdb
 # authentication
 admin = 'admin'
 password = 'password'
-url = f'http://{admin}:{password}@172.17.0.2:5984/'
+url = f'http://{admin}:{password}@host.docker.internal:5984/'
 
 # get couchdb instance
 couch = couchdb.Server(url)
