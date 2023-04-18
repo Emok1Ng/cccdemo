@@ -19,7 +19,7 @@
         state: latest
 
     - name: run Python application
-      ansible.builtin.command:
+      ansible.builtin.shell:
         cmd: "python3 Mastodon_demo.py"
         async: 0
         poll: 0
