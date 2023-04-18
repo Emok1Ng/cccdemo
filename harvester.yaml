@@ -19,10 +19,5 @@
         state: latest
 
     - name: run Python application
-      ansible.builtin.shell:
+      ansible.builtin.command:
         cmd: "nohup python3 Mastodon_demo.py > /dev/null 2>&1 &"
-        args:
-          warn: no
-        async: 0
-        poll: 0
-        become: no
