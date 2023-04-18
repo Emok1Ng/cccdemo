@@ -20,4 +20,4 @@
 
     - name: run Python application
       command:
-        cmd: python3 ./mastodon.py
+        cmd: python3 Mastodon_demo.py
