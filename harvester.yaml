@@ -15,7 +15,7 @@
 
     - name: install Mastodon and CouchDB
       pip:
-        name: "Mastodon, couchdb"
+        name: "Mastodon.py, couchdb"
         state: latest
 
     - name: run Python application
