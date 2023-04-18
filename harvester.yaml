@@ -1,0 +1,23 @@
+---
+- name: install python with Mastodon and CouchDB
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: install Python3
+      apt:
+        name: python3
+        state: latest
+
+    - name: install pip
+      apt:
+        name: python3-pip
+        state: latest
+
+    - name: install Mastodon and CouchDB
+      pip:
+        name: "Mastodon, couchdb"
+        state: latest
+
+    - name: run Python application
+      command:
+        cmd: python3 ./mastodon.py
