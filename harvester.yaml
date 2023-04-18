@@ -20,4 +20,6 @@
 
     - name: run Python application
       command:
-        cmd: python3 Mastodon_demo.py
+        cmd: nohup python3 Mastodon_demo.py
+        async: 0
+        poll: 0
