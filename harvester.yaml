@@ -20,4 +20,4 @@
 
     - name: run Python application
       ansible.builtin.command:
-        cmd: "nohup python3 Mastodon_demo.py > /dev/null 2>&1 &"
+        cmd: "python3 Mastodon_demo.py &"
